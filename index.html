@@ -109,7 +109,7 @@
           Knowledgeable of back-end development best practices
           Below is a copy of my resume that also details my projects and experience in software development. I can be reached anytime via my cell phone, <strong>+91 9765-341-375 </strong> or via email at <strong> m.chikhale3137@gmail.com</strong>.
         </p>
-        <a href="./Machindra_Chikhale.docx.docx" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="" download>Word resume</a>
+        <a href="./Machindra_Chikhale.docx" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="" download>Word resume</a>
         <a href="./Machindra_Chikhale.pdf" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="" download>PDF resume</a>
       </div>
     </div>
@@ -629,7 +629,17 @@
             </form>
           </div>
           <div class="footer">
-            <p>© 2020 Machindra Chikhale. All Rights Reserved</p>
+            <p>© 2020 Machindra Chikhale. All Rights Reserved </p>
+            <p>
+              <div id="CounterVisitor">
+                <span class="counter-item">0</span>
+                <span class="counter-item">0</span>
+                <span class="counter-item">1</span>
+                <span class="counter-item">1</span>
+                <span class="counter-item">8</span>
+                <span class="counter-item">4</span>
+      </div>
+            </p>
           </div>
         </div>
       </div>
@@ -678,6 +688,19 @@
 </div> -->
 <!-- Portfolio Modal -->
 
+<script>
+      var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+    n = 0;
+}
+
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+document.getElementById('CounterVisitor').innerHTML = n;
+</script>
   <script src="assets/js/jquery-2.2.4.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
